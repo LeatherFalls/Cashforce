@@ -2,7 +2,6 @@ module.exports = (sequelize, DataTypes) => {
   const Buyers = sequelize.define(
     'Buyers',
     {
-      id: DataTypes.INTEGER,
       name: DataTypes.STRING,
       tradingName: DataTypes.STRING,
       cashforceTax: DataTypes.STRING,

@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-  const OrderPortions = sequelize.Define(
+  const OrderPortions = sequelize.define(
     'OrderPortions',
     {
       nDup: DataTypes.STRING,
