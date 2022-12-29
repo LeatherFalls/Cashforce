@@ -1,2 +1,5 @@
 node_modules
 app/backend/.env
+app/frontend/.vscode
+app/frontend/.gitignore
+app/frontend/README.md
