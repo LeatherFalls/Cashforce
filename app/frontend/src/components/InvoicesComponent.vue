@@ -12,8 +12,8 @@ export default {
   <div class="invoice__container">
     <div class="header"></div>
     <div class="invoice__content">
-      <img src="@/assets/images/Vector.svg" alt="Logo" />
-      <span>Notas Fiscais</span>
+      <img src="@/assets/images/Vector2.svg" alt="Logo" />
+      <span>Notas fiscais</span>
     </div>
     <p>Visualize as notas fiscais que voce tem.</p>
     <TableComponentVue />
@@ -48,8 +48,11 @@ export default {
   align-items: center;
   justify-content: flex-start;
   margin-top: 40px;
-  padding: 0 2rem;
   margin-left: 48px;
+}
+
+.invoice__content img {
+  stroke: #021b51;
 }
 
 .invoice__content span {
@@ -65,7 +68,7 @@ export default {
   line-height: 20px;
   font-weight: 400;
   color: rgb(114, 125, 148);
-  padding: 7px 2rem;
+  padding: 7px 0;
   margin-left: 48px;
 }
 </style>
