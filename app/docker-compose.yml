@@ -11,7 +11,7 @@ services:
   frontend:
     build: ./frontend
     container_name: app_frontend
-    command: npm run dev
+    command: npm run host
     depends_on:
       - backend
     ports:
