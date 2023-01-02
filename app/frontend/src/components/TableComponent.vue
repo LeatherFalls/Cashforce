@@ -48,7 +48,7 @@ export default {
     </thead>
     <tbody>
       <tr class="nf" v-for="nf in nfs" :key="nf.id">
-        <td>{{ nf.nNf }}</td>
+        <td>{{ nf.orderNumber }}</td>
         <td>{{ nf.buyer.name }}</td>
         <td>{{ nf.provider.name }}</td>
         <td>{{ nf.emissionDate }}</td>
