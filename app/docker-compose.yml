@@ -1,0 +1,35 @@
+version: '3.9'
+services:
+  db:
+    container_name: db
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+    image: mysql
+    ports:
+      - 3306:3306
+    restart: 'always'
+  frontend:
+    build: ./frontend
+    container_name: app_frontend
+    command: npm run dev
+    depends_on:
+      - backend
+    ports:
+      - 5173:5173
+    restart: 'always'
+    working_dir: /app-frontend
+  backend:
+    build: ./backend
+    container_name: app_backend
+    command: npm run dev
+    depends_on:
+      - db
+    ports:
+      - 3000:3000
+    restart: 'always'
+    tty: true
+    working_dir: /app-backend
+
+networks:
+  default:
+    name: app-network
