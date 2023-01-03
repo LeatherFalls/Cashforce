@@ -12,6 +12,7 @@
   <strong>Instalação(sem docker)</strong>
  </summary>
 
+ ## OBS: Caso opte por rodar a aplicação sem docker, é preciso mudar o campo "host" do arquivo config.json para "localhost"
  #### Frontend
   ```bash
    cd app/frontend
