@@ -3,7 +3,7 @@
     "username": "root",
     "password": "root",
     "database": "cashforce",
-    "host": "localhost",
+    "host": "db",
     "dialect": "mysql"
   }
 }
