@@ -81,6 +81,8 @@ Para rodar os testes, execute os seguinte comandos
 | Método | Funcionalidade                            | URL                        |
 | ------ | ----------------------------------------- | -------------------------- |
 | `GET`  | Retorna todas as notas fiscais | http://localhost:3000/nf |
+#### Swagger
+http://localhost:3000/api-docs
 <details>
   <summary>
     <strong>Exemplo de retorno</strong>
