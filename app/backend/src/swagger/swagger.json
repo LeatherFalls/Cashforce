@@ -1,0 +1,82 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "CashForce Challenge",
+    "description": "Uma Api que gerencia notas fiscais",
+    "contact": {
+      "name": "Vinicius Gomes Nunes",
+      "email": "viniplay0599@gmail.com"
+    }
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000",
+      "description": "Api"
+    }
+  ],
+  "paths": {
+    "/nf": {
+      "get": {
+        "summary": "Retorna todas as notas fiscais",
+        "tags": [
+          "Nota Fiscal"
+        ],
+        "responses": {
+          "404": {
+            "description": "Nenhuma nota fiscal encontrada"
+          },
+          "200": {
+            "description": "Notas fiscais",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/NotaFiscal"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "NotaFiscal": {
+        "type": "object",
+        "properties": {
+          "orderNumber": {
+            "type": "string"
+          },
+          "emissionDate": {
+            "type": "string"
+          },
+          "value": {
+            "type": "string"
+          },
+          "orderStatusBuyer": {
+            "type": "string"
+          },
+          "buyer": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              }
+            }
+          },
+          "provider": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
